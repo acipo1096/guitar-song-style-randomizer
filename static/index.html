@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Song Randomizer</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <!-- <div class="container-fluid"> -->
+      <div>
+        <!-- <div class="collapse navbar-collapse" id="navbar-items"> -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              href="./index.html"
+              class="nav-link active text-light"
+              aria-current="page"
+              >Guitar Songs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./licks.html" class="nav-link text-light">Guitar Styles</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="launchpad">
+        <div id="menu">
+          <h1>Guitar Song Randomizer</h1>
+        </div>
+        <div class="alert">Randomizing...</div>
+        <div class="choices">
+          <table>
+            <tbody>
+              <tr>
+                <th>Artist</th>
+                <th>Song</th>
+              </tr>
+              <tr>
+                <td id="artist-name"></td>
+                <td id="song-name"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button class="button text-dark" id="submit">What's Next?</button>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" src="script.js"></script>
+</html>

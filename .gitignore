@@ -1,0 +1,7 @@
+/node_modules
+/venv
+.env
+client_secret_guitar_email.json
+song.json
+requirements.txt
+style_info.json
