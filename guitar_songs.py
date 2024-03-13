@@ -18,12 +18,12 @@ song_json_file = os.getenv('SONG_JSON_FILE')
 credentials = service_account.Credentials.from_service_account_file(service_account_file)
 scoped_credentials = credentials.with_scopes('https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive')
 gc = gspread.service_account(filename=service_account_file)
-
 sheet = gc.open('Guitar Song List').get_worksheet(0)
 
-rock = sheet.get_all_records()
 
-df = pd.DataFrame(rock)
+get_all_records = sheet.get_all_records()
+
+df = pd.DataFrame(get_all_records)
 dropEmpty = df.dropna()
 
 totalArtists = df.iloc[2][0]
